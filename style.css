@@ -637,98 +637,42 @@
   
   /* MOBILE */
   
-  @media (max-width: 900px) {
-    .navbar {
-      height: auto;
-      padding: 18px 5%;
-      flex-direction: column;
-      gap: 16px;
-    }
-  
-    nav {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 18px;
-    }
-  
-    .nav-btn {
-      display: none;
-    }
-  
-    .hero {
-        min-height: 620px;
-      
-        display: flex;
-        align-items: center;
-      
-        padding: 0 7%;
-      
-        position: relative;
-        overflow: hidden;
-      
-        background:
-          linear-gradient(
-            90deg,
-            rgba(255,255,255,0.96) 0%,
-            rgba(255,255,255,0.90) 28%,
-            rgba(255,255,255,0.55) 48%,
-            rgba(0,119,152,0.10) 100%
-          ),
-          url("surgicaltool-image.jpg");
-      
-        background-size: cover;
-        background-position: center;
-      }
-  
-      .hero-text {
-        max-width: 700px;
-        position: relative;
-        z-index: 2;
-      }
-  
-    .hero h1 {
-      font-size: 42px;
-    }
-  
-    .hero-image {
-      height: 320px;
-      clip-path: none;
-    }
-  
-    .about,
-    .clientele,
-    .service-grid,
-    .mvg,
-    .team-grid,
-    .location-grid,
-    .contact {
-      grid-template-columns: 1fr;
-    }
-  
-    .service-card,
-    .team-card,
-    .mvg-card {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-  
-    .icon,
-    .team-icon,
-    .mvg-icon {
-      margin: 0 auto;
-    }
-  
-    .center-title h2,
-    .about-text h2,
-    .clientele h2 {
-      font-size: 30px;
-    }
-  
-    .contact {
-      text-align: center;
-    }
-  
-    .contact-logo {
-      margin: 0 auto;
-    }
+ @media (max-width: 768px) {
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
+
+  .service-card {
+    padding: 22px 12px;
+    border-radius: 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    min-height: 220px;
+    text-align: center;
+  }
+
+  .icon {
+    width: 85px;
+    height: 85px;
+    min-width: 85px;
+  }
+
+  .icon img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .service-content h3 {
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+}
