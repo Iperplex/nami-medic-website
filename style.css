@@ -775,16 +775,50 @@
 
   /* TEAM */
 
-  .team-card,
-  .mvg-card {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+  .team-grid {
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
 
-  .team-icon,
-  .mvg-icon {
-    margin: 0 auto 18px;
-  }
+.team-card {
+  width: 100%;
+  padding: 30px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-radius: 24px;
+}
+
+.team-icon {
+  width: 90px;
+  height: 90px;
+
+  margin-bottom: 22px;
+}
+
+.team-icon img {
+  width: 46px;
+  height: 46px;
+}
+
+.team-card h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.team-card p {
+  font-size: 15px;
+  line-height: 1.8;
+
+  max-width: 290px;
+  margin: 0 auto;
+}
 
   /* CONTACT */
 
