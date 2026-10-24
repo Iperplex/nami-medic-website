@@ -346,6 +346,23 @@
     box-shadow:
       0 22px 50px rgba(0,119,152,0.16);
   }
+
+  .services-intro {
+  max-width: 720px;
+  margin: 18px auto 24px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .services-intro {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 8px;
+  }
+}
   
   .icon {
     min-width: 130px;
