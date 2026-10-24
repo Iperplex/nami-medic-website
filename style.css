@@ -914,14 +914,14 @@
   /* SERVICES */
 
   .service-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
 
   .service-card {
     padding: 22px 12px;
     border-radius: 22px;
-    min-height: 200px;
+    min-height: 180px;
 
     display: flex;
     flex-direction: column;
@@ -929,6 +929,10 @@
     justify-content: center;
 
     text-align: center;
+  }
+
+  .services .center-title {
+    margin-bottom: 30px;
   }
 
   .icon {
